@@ -34,7 +34,7 @@ namespace Assets.Scripts
             // INSERT SERVER ENDPOINT FOLDER HERE
             string uri = "http://130.136.2.161:50001/videos";
             WebRequest request = WebRequest.Create(uri);
-            request.Headers.Add("ngrok-skip-browser-warning", "ciao");
+            //request.Headers.Add("ngrok-skip-browser-warning", "ciao");
             WebResponse response;
             try
             {
