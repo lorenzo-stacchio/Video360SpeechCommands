@@ -32,8 +32,7 @@ namespace Assets.Scripts
             mainCamera.transform.localScale = new Vector3(1, 1, 1);
 
             // INSERT SERVER ENDPOINT FOLDER HERE
-            // string uri = "http://localhost:8000/UnityProjects/Video360SpeechCommands/Assets/Videos/";
-            string uri = "http://9ca8-137-204-11-201.ngrok.io/data01/video360/videos/";
+            string uri = "http://130.136.2.161:50001/videos";
             WebRequest request = WebRequest.Create(uri);
             request.Headers.Add("ngrok-skip-browser-warning", "ciao");
             WebResponse response;
@@ -112,7 +111,8 @@ namespace Assets.Scripts
 
                             // Set the video to play. URL supports local absolute or relative paths.
                             // Here, using absolute.
-                            videos[i].url = uri + videoNames[i];
+
+                            videos[i].url = uri + "/" + videoNames[i];
 
                             // Debug.Log(videos[i].url);
 
@@ -124,7 +124,7 @@ namespace Assets.Scripts
                             videos[i].frame = (int)videos[i].frameCount / 2;
 
                             videos[i].Play();
-                            
+
                             i++;
                         }
                         else
@@ -141,7 +141,7 @@ namespace Assets.Scripts
                     mytext.rectTransform.localScale = new Vector3((float)0.5, (float)0.5, 1);
                 }
             }
-            else 
+            else
             {
                 disableObjects("No server found");
             }
@@ -151,13 +151,13 @@ namespace Assets.Scripts
         {
             // for (var i = 0; i < videos.Length; i++) 
             // {
-                //for (var k = 0; (k < videos.Length && k != i); k++)
-                //    videos[k].Pause();
-               
+            //for (var k = 0; (k < videos.Length && k != i); k++)
+            //    videos[k].Pause();
+
             // }
         }
 
-        private void disableObjects(string feedback) 
+        private void disableObjects(string feedback)
         {
             foreach (Text txt in Viewport.GetComponentsInChildren<Text>())
             {
