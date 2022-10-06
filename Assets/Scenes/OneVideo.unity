@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -507,7 +507,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &57824897
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1122,7 +1122,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &186247320
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1828,6 +1828,8 @@ MonoBehaviour:
   mainCamera: {fileID: 1483257768}
   player: {fileID: 1865803368}
   catalog: {fileID: 2052568507}
+  sphere_Catalogue: {fileID: 688063556}
+  viewport: {fileID: 986360187}
 --- !u!114 &319125376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4973,8 +4975,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "COMANDI VOCALI\n\n\n\n\"AUMENTA LA VELOCITA'\"\nAumenta la velocit\xE0
-    di riproduzione\n\n\"RIDUCI LA VELOCITA'\"\nRiduce la velocit\xE0 di riproduzione\n\n\"TRACCIA
-    1-11\"\nNaviga tra le tracce del video\n"
+    di riproduzione\n\n\"RIDUCI LA VELOCITA'\"\nRiduce la velocit\xE0 di riproduzione"
 --- !u!222 &750122909
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6322,10 +6323,10 @@ RectTransform:
   m_Father: {fileID: 996908971}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 600, y: -700}
-  m_SizeDelta: {x: 800, y: 1400}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1008768923
 MonoBehaviour:
@@ -6688,7 +6689,7 @@ VideoPlayer:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: http://130.136.2.161:50001/videos/amarcord_android.mp4
+  m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -8140,7 +8141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1351884750
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8433,7 +8434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1445315835
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8533,7 +8534,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1468505878
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8927,7 +8928,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1533230336
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9669,7 +9670,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1651722520
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10608,7 +10609,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1865803369
 Transform:
   m_ObjectHideFlags: 0
@@ -11660,7 +11661,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2002006667
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12039,7 +12040,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2052568508
 Transform:
   m_ObjectHideFlags: 0

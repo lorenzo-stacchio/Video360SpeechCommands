@@ -22,6 +22,12 @@ namespace Assets.Scripts
         [SerializeField]
         GameObject catalog;
 
+        [SerializeField]
+        GameObject sphere_Catalogue;
+
+        [SerializeField]
+        GameObject viewport;
+
         string[] videoNames;
         bool noVideos = true;
 
@@ -34,7 +40,6 @@ namespace Assets.Scripts
             // INSERT SERVER ENDPOINT FOLDER HERE
             string uri = "http://130.136.2.161:50001/videos";
             WebRequest request = WebRequest.Create(uri);
-            //request.Headers.Add("ngrok-skip-browser-warning", "ciao");
             WebResponse response;
             try
             {
@@ -176,10 +181,15 @@ namespace Assets.Scripts
         public void OnVideoSelect(int id)
         {
 
-            mainCamera.transform.localScale = new Vector3(0, 0, 0);
+            //mainCamera.transform.localScale = new Vector3(0, 0, 0);
             mytext.text = videos[id].url;
-            catalog.SetActive(false);
+            Debug.Log(mytext.text);
+
             player.SetActive(true);
+            sphere_Catalogue.SetActive(false);
+            viewport.transform.localScale = Vector3.zero;
+            //catalog.SetActive(false);
+
         }
     }
 }

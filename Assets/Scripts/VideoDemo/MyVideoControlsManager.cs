@@ -220,7 +220,6 @@ namespace Assets.Scripts
             if (Player != null)
             {
                 WebRequest request = WebRequest.Create(url.text);
-                request.Headers.Add("ngrok-skip-browser-warning", "ciao");
                 WebResponse response;
                 try
                 {
